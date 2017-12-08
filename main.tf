@@ -23,7 +23,7 @@ data "aws_iam_policy_document" "cidr_house_assume_role" {
 data "aws_iam_policy_document" "cidr_house_policy" {
   statement {
     effect    = "Allow"
-    actions   = ["ec2:Describe*"]
+    actions   = ["ec2:Describe*", "elasticloadbalancing:Describe*"]
     resources = ["*"]
   }
 }
