@@ -3,9 +3,14 @@ variable "cidr_house_rules_account_number" {
   default     = ""
 }
 
-variable "serverless_stage" {
-  description = "The Serverless stage you want to grant access to. Defined with serverless deploy --stage <here> command"
+variable "serverless_dev_stage" {
+  description = "The Serverless dev stage for a cidr-house-rules implemenation"
   default     = "dev"
+}
+
+variable "serverless_prod_stage" {
+  description = "The Serverless prod stage for a cidr-house-rules implemenation"
+  default     = "prod"
 }
 
 variable "serverless_region" {

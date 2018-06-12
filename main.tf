@@ -14,7 +14,8 @@ data "aws_iam_policy_document" "cidr_house_assume_role" {
       type = "AWS"
 
       identifiers = [
-        "arn:aws:iam::${var.cidr_house_rules_account_number}:role/cidr-house-rules-${var.serverless_stage}-${var.serverless_region}-lambdaRole",
+        "arn:aws:iam::${var.cidr_house_rules_account_number}:role/cidr-house-rules-${var.serverless_dev_stage}-${var.serverless_region}-lambdaRole",
+        "arn:aws:iam::${var.cidr_house_rules_account_number}:role/cidr-house-rules-${var.serverless_prod_stage}-${var.serverless_region}-lambdaRole",
       ]
     }
   }
