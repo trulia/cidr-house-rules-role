@@ -18,8 +18,8 @@ Usage
 // provide access for a dev cidr-house-rules deploy
 module "cidr-house-rules-role" {
   cidr_house_rules_account_number = "123456770"
-  serverless_dev_stage                = "dev"
-  serverless_prod_stage                = "dev"
+  serverless_dev_stage            = "dev"
+  serverless_prod_stage           = "prod"
   serverless_region               = "us-west-2"
   source                          = "git::ssh://git@github.com/trulia/cidr-house-rules-role.git?ref=v0.0.1"
 }
